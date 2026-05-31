@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Michroma&display=swap');
+
+
+
+
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.limelight-regular {
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.image {
+  object-fit: cover;
+}
+
+/*
 @import "tailwindcss";
 
 :root {
@@ -23,4 +51,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+}*/
