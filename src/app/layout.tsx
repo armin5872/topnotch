@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./bootstrap.min.css";
 import Navbar from "./topnotch-proto/Navbar";
+import Footer from "./topnotch-proto/footer";
 import "./globals.css";
 import SmoothScroll from "./SmoothScroll";
 
@@ -18,8 +19,9 @@ export default function RootLayout({
     <SmoothScroll>
       <html lang="en">
         <body>
-          <Navbar />
+            <Navbar />
             {children}
+            <Footer />
         </body>
       </html>
     </SmoothScroll>
