@@ -9,7 +9,7 @@ const footerBrand = css`
   color: black;
   &:hover {
     transform: scale(1.1);
-    backgroundcolor: skyblue !important;
+    background-color: skyblue !important;
   }
 `
 const footerLink = css`
@@ -17,7 +17,7 @@ const footerLink = css`
   text-decoration: none;
   color: black;
   &:hover {
-    backgroundcolor: orange !important;
+    background-color: orange !important;
   }
 `
 export default function Footer() {

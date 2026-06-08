@@ -18,7 +18,7 @@ const info = [
   },
   {
     name: 'Gloria Fables',
-    profession: 'Full-Stack Devloper',
+    profession: 'Full-Stack Developer',
     description:
       'She has up to date info on Next.Js and React with Docker and MongoDB.',
     link: '/gloria.png',
@@ -32,7 +32,7 @@ const info = [
   },
   {
     name: 'Amir Hakimi',
-    profession: 'Animation Deisgner For Our Websites',
+    profession: 'Animation Designer For Our Websites',
     description: 'Makes some of the best animations that exist',
     link: '/amir.png',
   },
