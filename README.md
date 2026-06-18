@@ -1,36 +1,159 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Topnotch
+
+A modern Next.js frontend application featuring multiple landing pages and interactive components. Built with React 19, Tailwind CSS, and smooth animations for an excellent user experience.
+
+## Features
+
+- ✨ **Multiple Web Applications**: Topnotch Proto (core platform) and Corso React (course platform)
+- 🎨 **Smooth Animations**: Powered by Framer Motion and GSAP
+- 🎯 **Interactive Components**: Swiper carousels, modern forms, and responsive UI
+- 📱 **Fully Responsive**: Mobile-first design with Tailwind CSS
+- 🚀 **Next.js 16**: Latest generation framework with App Router
+- 📝 **TypeScript**: Full type safety across the codebase
+- 🔍 **Error Tracking**: Integrated Sentry for production monitoring
+- 🐳 **Docker Ready**: Containerized deployment support
+- 🧹 **Code Quality**: ESLint, Prettier, and Husky for pre-commit linting
+
+## Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/)
+- **UI Library**: [React 19](https://react.dev/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/) + [Emotion](https://emotion.sh/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/), [GSAP](https://greensock.com/gsap/), [Lenis](https://lenis.studiofreight.com/)
+- **Components**: [Swiper](https://swiperjs.com/), [React Icons](https://react-icons.github.io/react-icons/)
+- **HTTP Client**: [Axios](https://axios-http.com/)
+- **Monitoring**: [Sentry](https://sentry.io/)
+- **Development**: TypeScript, ESLint, Prettier
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── page.tsx                 # Home page
+│   ├── layout.tsx               # Root layout
+│   ├── SmoothScroll.tsx          # Smooth scrolling component
+│   ├── topnotch-proto/          # Main Topnotch application
+│   │   ├── Navbar.tsx
+│   │   ├── footer.tsx
+│   │   ├── sign-up/
+│   │   ├── log-in/
+│   │   ├── faq/
+│   │   ├── programmers/
+│   │   └── contact-us/
+│   └── corso-react/             # Course platform application
+│       ├── page.tsx
+│       └── components/
+│           ├── Hero.tsx
+│           ├── Features.tsx
+│           ├── Benefits.tsx
+│           ├── Navbar.tsx
+│           ├── Footer.tsx
+│           ├── EventBanner.tsx
+│           ├── Seminar.tsx
+│           ├── Registration.tsx
+│           ├── CourseSummary.tsx
+│           ├── Partners.tsx
+│           ├── Takeaways.tsx
+│           └── Subscribe.tsx
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.17+
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/armin5872/topnotch.git
+   cd topnotch
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
+
+## Available Scripts
+
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint and fix issues
+
+## Docker Support
+
+Build and run the application in a Docker container:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+docker build -t topnotch .
+docker run -p 3000:3000 topnotch
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Development Workflow
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Code Quality
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses automated tools to maintain code quality:
 
-## Learn More
+- **ESLint** - JavaScript/TypeScript linting
+- **Prettier** - Code formatting
+- **Husky** - Git pre-commit hooks
 
-To learn more about Next.js, take a look at the following resources:
+Pre-commit hooks automatically run linting and formatting on staged files.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Create a `.env.local` file in the root directory with any required environment variables:
 
-## Deploy on Vercel
+```env
+# Example environment variables
+NEXT_PUBLIC_API_URL=http://localhost:3000
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Pages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Home** (`/`) - Main landing page
+- **Topnotch Proto**
+  - Sign Up (`/topnotch-proto/sign-up`)
+  - Log In (`/topnotch-proto/log-in`)
+  - FAQ (`/topnotch-proto/faq`)
+  - Programmers (`/topnotch-proto/programmers`)
+  - Contact Us (`/topnotch-proto/contact-us`)
+- **Corso React** (`/corso-react`) - Course platform landing
+
+## Performance & Monitoring
+
+- **Sentry Integration**: Error tracking and performance monitoring enabled for production
+- **Smooth Scrolling**: Implemented with Lenis for better UX
+- **Optimized Animations**: Using GSAP and Framer Motion for performant animations
+
+## Contributing
+
+1. Create a feature branch (`git checkout -b feature/amazing-feature`)
+2. Make your changes
+3. Commit with a descriptive message
+4. Push to your branch
+5. Open a Pull Request
+
+## License
+
+This project is private. For licensing information, contact the repository owner.
+
+---
+
+**Repository**: [armin5872/topnotch](https://github.com/armin5872/topnotch)

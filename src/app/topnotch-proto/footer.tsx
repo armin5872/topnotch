@@ -17,7 +17,7 @@ const footerLink = css`
   text-decoration: none;
   color: black;
   &:hover {
-    background-color: orange !important;
+    color: orange !important;
   }
 `
 export default function Footer() {

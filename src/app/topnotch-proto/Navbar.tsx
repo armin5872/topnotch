@@ -14,7 +14,7 @@ const navbarBrand = css`
   transition-duration: 0.4s;
   &:hover {
     transform: scale(1.1);
-    backgroundcolor: skyblue !important;
+    background-color: skyblue !important;
   }
 `
 export default function Navbar() {
@@ -50,7 +50,7 @@ export default function Navbar() {
             css={navbarBtn}
             className='nav-item px-1 fs-5 rounded-2 mx-2 bg-info'
           >
-            <Link className='nav-link' href='#'>
+            <Link className='nav-link' href='/topnotch-proto/contact-us'>
               Contact Us
             </Link>
           </li>
@@ -66,7 +66,7 @@ export default function Navbar() {
             css={navbarBtn}
             className='nav-item px-1 fs-5 rounded-2 mx-2 bg-info'
           >
-            <Link className='nav-link' href='#'>
+            <Link className='nav-link' href='/topnotch-proto/faq'>
               FAQ
             </Link>
           </li>

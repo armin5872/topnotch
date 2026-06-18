@@ -61,7 +61,7 @@ export default function LogIn() {
 
               <form>
                 <label htmlFor='emailpfor' className='form-label mt-3'>
-                  I ( Phone Number Or Email Address )
+                  ID ( Phone Number Or Email Address )
                 </label>
                 <input
                   type='email'
