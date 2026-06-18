@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src",
-    "prepare": "if [ \"$VERCEL\" != \"1\" ]; then husky; fi"
+    "lint": "eslint src"
   },
   "dependencies": {
     "@emotion/css": "^11.13.5",
