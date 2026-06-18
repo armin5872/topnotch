@@ -58,7 +58,7 @@ export default function Navbar() {
             css={navbarBtn}
             className='nav-item px-1 fs-5 rounded-2 mx-2 bg-info'
           >
-            <Link className='nav-link' href='#'>
+            <Link className='nav-link' href='/topnotch-proto/about-us'>
               About Us
             </Link>
           </li>
