@@ -37,7 +37,7 @@ export default function Footer() {
       </div>
       <div>
         <h1 className='mb-0'>
-          &copy; {new Date().getFullYear()} TopNotch. All rights reserved.
+          {new Date().getFullYear()} TopNotch an example website made by ArminNX
         </h1>
       </div>
       <div>
@@ -46,15 +46,14 @@ export default function Footer() {
           css={footerLink}
           href='mailto:topnotchprogrammers@gmail.com'
         >
-          topnotchprogrammers@gmail.com
+          arminnxm@gmail.com
         </a>
       </div>
       <div className='my-3'>
-        <a css={footerLink} href='tel:123-456-7890'>
-          Phone Number : 123-456-7890
+        <a css={footerLink} href='https://github.com/armin5872/topnotch'>
+          github
         </a>
       </div>
-      <div>HQ Address : 1600 Pennsylvania Avenue NW, Washington, DC 20500</div>
     </footer>
   )
 }

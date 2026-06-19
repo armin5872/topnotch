@@ -56,7 +56,7 @@ export default function Navbar() {
               css={navbarBtn}
               className='nav-item px-1 fs-6 rounded-2 mx-2 bg-info'
             >
-              <Link className='nav-link' href='#'>
+              <Link className='nav-link' href='/topnotch-proto/home'>
                 Home
               </Link>
             </li>
@@ -112,7 +112,7 @@ export default function Navbar() {
               css={navbarBtn}
               className='nav-item px-1 fs-6 rounded-2 mx-2 bg-info'
             >
-              <Link className='nav-link' href='#'>
+              <Link className='nav-link' href='/topnotch-proto/our-services'>
                 Our Services
               </Link>
             </li>

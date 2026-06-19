@@ -1,0 +1,212 @@
+.hero-wrapper {
+  position: relative;
+  min-height: 100vh;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/top.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* adjust this */
+  z-index: 0;
+}
+.hero-section1 {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+.hero-section2 {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+.hero-section3 {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+.hero-section4 {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+.hero-section > * {
+  position: relative;
+  z-index: 1;
+}
+.hero-section1 > * {
+  position: relative;
+  z-index: 1;
+}
+.hero-section2 > * {
+  position: relative;
+  z-index: 1;
+}
+.hero-section3 > * {
+  position: relative;
+  z-index: 1;
+}
+.hero-section4 > * {
+  position: relative;
+  z-index: 1;
+}
+.hero-section1::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/basic.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* adjust this */
+  z-index: 0;
+}
+.hero-section2::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/nextjs.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* adjust this */
+  z-index: 0;
+}
+.hero-section3::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/fullstack.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* adjust this */
+  z-index: 0;
+}
+.hero-section4::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/backend.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* adjust this */
+  z-index: 0;
+}
+
+/* Content */
+.content-layer {
+  position: relative;
+  z-index: 10;
+}
+
+/* Aurora */
+.aurora {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+}
+
+.aurora1 {
+  width: 500px;
+  height: 500px;
+  top: 10%;
+  left: 15%;
+  background: radial-gradient(circle, rgba(13, 110, 253, 0.5), transparent 70%);
+}
+
+.aurora2 {
+  width: 450px;
+  height: 450px;
+  bottom: 10%;
+  right: 15%;
+  background: radial-gradient(
+    circle,
+    rgba(13, 202, 240, 0.45),
+    transparent 70%
+  );
+}
+
+.aurora3 {
+  width: 400px;
+  height: 400px;
+  top: 35%;
+  right: 35%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.9),
+    transparent 65%
+  );
+}
+
+/* Gradient Text */
+.gradient-text {
+  display: inline-block;
+  font-weight: bold;
+
+  background: linear-gradient(
+    90deg,
+    #198754 0%,
+    #000000 25%,
+    #198754 50%,
+    #000000 75%,
+    #198754 100%
+  );
+
+  background-size: 300% auto;
+  background-position: 0% center;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  animation:
+    gradientMove 2s linear infinite,
+    glowPulse 1.8s ease-in-out infinite alternate,
+    floatText 3s ease-in-out infinite;
+}
+
+/* Gradient moving */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 300% center;
+  }
+}
+
+/* Neon glow */
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 10px rgba(25, 135, 84, 0.2);
+  }
+  100% {
+    text-shadow: 0 0 35px rgba(25, 135, 84, 0.6);
+  }
+}
+
+/* Slight floating */
+@keyframes floatText {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
