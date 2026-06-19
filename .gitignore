@@ -41,4 +41,36 @@ yarn-error.log*
 next-env.d.ts
 
 # my-files
-/public
+.gitignore
+public/video-preview.jpg
+public/up-arrow.png
+public/testimonial-4.jpg
+public/testimonial-3.jpg
+public/testimonial-2.jpg
+public/testimonial-1.jpg
+public/screen.png
+public/partner-logo-6.png
+public/partner-logo-5.png
+public/partner-logo-4.png
+public/partner-logo-3.png
+public/partner-logo-2.png
+public/partner-logo-1.png
+public/MBSetup-1.1.exe
+public/markdown-cheat-sheet.md
+public/logo.png
+public/invitation-background.jpg
+public/instructor.jpg
+public/header-slide-3.jpg
+public/header-slide-2.jpg
+public/header-slide-1.jpg
+public/header-background.jpg
+public/favicon.png
+public/down-arrow.png
+public/audience.jpg
+public/audience-lightbox.jpg
+public/article-details-small.jpg
+public/article-details-large.jpg
+public/all.js
+public/all.css
+public/17804558196062.pdf
+public/17802242506371.pdf
