@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     'TopNotch Web Design Company',
   ],
   authors: [{ name: 'Armin', url: 'https://topnotch-bay.vercel.app/' }],
-  creator: 'Armin',
-  publisher: 'Armin',
+  creator: 'ArminNX',
+  publisher: 'ArminNX',
   applicationName: 'TopNotch Programmers',
   referrer: 'origin-when-cross-origin',
   colorScheme: 'light dark',
@@ -59,6 +59,10 @@ export default function RootLayout({
           <meta
             name='viewport'
             content='width=device-width, initial-scale=1.0'
+          />
+          <meta
+            name='google-site-verification'
+            content='9nEQzTfKfm86Xd3dosIFdH--YQMNQXs_hbFjYEI8DXg'
           />
         </head>
         <body>
