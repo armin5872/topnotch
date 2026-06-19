@@ -2,6 +2,10 @@
 
 A modern Next.js frontend application featuring multiple landing pages and interactive components. Built with React 19, Tailwind CSS, and smooth animations for an excellent user experience.
 
+## website link
+
+- you can see the website here: [vercel deployment](https://topnotch-bay.vercel.app/)
+
 ## Features
 
 - ✨ **Multiple Web Applications**: Topnotch Proto (core platform) and Corso React (course platform)
@@ -152,7 +156,7 @@ NEXT_PUBLIC_API_URL=http://localhost:3000
 
 ## License
 
-This project is private. For licensing information, contact the repository owner.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
