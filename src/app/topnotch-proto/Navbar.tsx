@@ -3,6 +3,7 @@
 
 import { css } from '@emotion/react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 
 const navbarBtn = css`
@@ -25,12 +26,14 @@ export default function Navbar() {
   return (
     <nav className='navbar navbar-light navbar-expand-lg fixed-top bg-light'>
       <div className='container-fluid my-2 limelight-regular'>
-        <a
-          css={navbarBrand}
-          className='navbar-brand michroma-regular p-2 fw-bold bg-info rounded-4'
-          href='#'
-        >
-          Topnotch
+        <a css={navbarBrand} href='#'>
+          <Image
+            className='rounded-3'
+            src='/topnotch-logo.png'
+            alt='Topnotch Logo'
+            width={120}
+            height={40}
+          />
         </a>
 
         <button

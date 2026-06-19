@@ -2,6 +2,7 @@
 'use client'
 
 import { css } from '@emotion/react'
+import Image from 'next/image'
 
 const footerBrand = css`
   transition-duration: 0.4s;
@@ -24,12 +25,14 @@ export default function Footer() {
   return (
     <footer className='bg-primary text-center text-dark p-5'>
       <div className='mb-4'>
-        <a
-          css={footerBrand}
-          className='michroma-regular p-2 fw-bold bg-info rounded-4'
-          href='#'
-        >
-          Topnotch
+        <a css={footerBrand} href='#'>
+          <Image
+            className='rounded-3'
+            src='/topnotch-logo.png'
+            alt='Topnotch Logo'
+            width={150}
+            height={50}
+          />
         </a>
       </div>
       <div>

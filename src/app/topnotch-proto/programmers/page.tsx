@@ -98,49 +98,56 @@ export default function ProgrammersList() {
 
   return (
     <>
-      <div className='container-fluid my-5 pt-5'>
-        <h1 className='display-5 michroma-regular text-center fw-bold text-dark '>
+      <div className='container-fluid my-3 my-sm-4 my-md-5 pt-3 pt-sm-4 pt-md-5 px-2 px-sm-3'>
+        <h1 className='display-6 display-sm-5 michroma-regular text-center fw-bold text-dark'>
           Our Team Of Talented Programmers
         </h1>
       </div>
-      <div className='container row mx-auto michroma-regular py-5'>
-        {info.map((programmer) => (
-          <div
-            className='card col-6 shadow-lg border-0 p-4 mb-5'
-            key={programmer.name}
-          >
-            <div className='card-body'>
-              <h1
-                className='card-title text-info fw-bold scramble-text'
-                data-text={programmer.name}
+      <div className='container-fluid px-2 px-sm-3 px-md-4'>
+        <div className='row mx-auto michroma-regular py-3 py-sm-4 py-md-5'>
+          {info.map((programmer) => (
+            <div
+              className='col-12 col-sm-12 col-md-6 col-lg-6 p-2 p-sm-3 p-md-4 mb-4'
+              key={programmer.name}
+            >
+              <div
+                className='card shadow-lg border-0 h-100'
+                style={{ overflow: 'hidden' }}
               >
-                Loading...
-              </h1>
+                <div className='card-body p-2 p-sm-3 p-md-4'>
+                  <h2
+                    className='card-title text-info fw-bold scramble-text fs-5 fs-sm-4 fs-md-3 mb-2'
+                    data-text={programmer.name}
+                  >
+                    Loading...
+                  </h2>
 
-              <h4
-                className='card-subtitle text-muted my-3 scramble-text'
-                data-text={programmer.profession}
-              >
-                Loading...
-              </h4>
+                  <h5
+                    className='card-subtitle text-muted my-2 scramble-text fs-6 fs-sm-5'
+                    data-text={programmer.profession}
+                  >
+                    Loading...
+                  </h5>
 
-              <p
-                className='card-text text-primary fs-5 scramble-text'
-                data-text={programmer.description}
-              >
-                Loading...
-              </p>
-              <div className='image-wrapper'>
-                <Image
-                  src={programmer.link}
-                  alt={programmer.name}
-                  fill
-                  className='image'
-                />
+                  <p
+                    className='card-text text-primary fs-6 fs-sm-5 mb-3 scramble-text'
+                    data-text={programmer.description}
+                  >
+                    Loading...
+                  </p>
+                  <div className='image-wrapper'>
+                    <Image
+                      src={programmer.link}
+                      alt={programmer.name}
+                      fill
+                      className='image'
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   )
