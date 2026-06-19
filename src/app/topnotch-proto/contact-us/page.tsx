@@ -44,7 +44,9 @@ export default function ContactUs() {
   })
   const [submitted, setSubmitted] = useState(false)
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target
     setFormData((prev) => ({
       ...prev,
@@ -52,10 +54,10 @@ export default function ContactUs() {
     }))
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+
     try {
-      // Replace with your actual API endpoint
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -74,20 +76,20 @@ export default function ContactUs() {
 
   return (
     <motion.div
-      className='contact-container p-5 m-5'
+      className='contact-container p-3 p-sm-4 p-lg-5 m-3 m-sm-4 m-lg-5'
       variants={containerVariants}
       initial='hidden'
       animate='visible'
     >
       <motion.h1
-        className='michroma-regular text-dark fs-1 mb-4 text-center'
+        className='michroma-regular text-dark fs-1 fs-sm-2 mb-3 mb-sm-4 text-center'
         variants={itemVariants}
       >
         Get In Touch With Us
       </motion.h1>
 
       <motion.p
-        className='text-center text-dark mb-5 fs-5'
+        className='text-center text-dark mb-4 mb-sm-5 fs-6 fs-sm-5'
         variants={itemVariants}
       >
         Have any questions? We&apos;d love to hear from you. Send us a message
@@ -98,9 +100,9 @@ export default function ContactUs() {
         className='row justify-content-center'
         variants={itemVariants}
       >
-        <div className='col-lg-6 col-md-8 col-sm-10'>
+        <div className='col-12 col-sm-10 col-md-8 col-lg-6'>
           <form onSubmit={handleSubmit}>
-            <motion.div className='mb-4' variants={itemVariants}>
+            <motion.div className='mb-3 mb-sm-4' variants={itemVariants}>
               <label htmlFor='name' className='form-label michroma-regular'>
                 Name
               </label>
@@ -116,7 +118,7 @@ export default function ContactUs() {
               />
             </motion.div>
 
-            <motion.div className='mb-4' variants={itemVariants}>
+            <motion.div className='mb-3 mb-sm-4' variants={itemVariants}>
               <label htmlFor='email' className='form-label michroma-regular'>
                 Email
               </label>
@@ -132,7 +134,7 @@ export default function ContactUs() {
               />
             </motion.div>
 
-            <motion.div className='mb-4' variants={itemVariants}>
+            <motion.div className='mb-3 mb-sm-4' variants={itemVariants}>
               <label htmlFor='subject' className='form-label michroma-regular'>
                 Subject
               </label>
@@ -148,7 +150,7 @@ export default function ContactUs() {
               />
             </motion.div>
 
-            <motion.div className='mb-4' variants={itemVariants}>
+            <motion.div className='mb-3 mb-sm-4' variants={itemVariants}>
               <label htmlFor='message' className='form-label michroma-regular'>
                 Message
               </label>
@@ -167,7 +169,7 @@ export default function ContactUs() {
             <motion.button
               css={submitBtn}
               type='submit'
-              className='btn btn-info michroma-regular w-100 fs-5'
+              className='btn btn-info michroma-regular w-100 fs-6 fs-sm-5'
               variants={itemVariants}
             >
               Send Message
@@ -188,21 +190,21 @@ export default function ContactUs() {
       </motion.div>
 
       <motion.div
-        className='row justify-content-center mt-5 pt-5'
+        className='row justify-content-center mt-4 mt-sm-5 pt-4 pt-sm-5'
         variants={itemVariants}
       >
-        <div className='col-lg-8 text-center'>
-          <h3 className='michroma-regular text-dark mb-4'>
+        <div className='col-12 col-sm-10 col-lg-8 text-center'>
+          <h3 className='michroma-regular text-dark mb-3 mb-sm-4 fs-4 fs-sm-3'>
             Other Ways to Reach Us
           </h3>
-          <div className='bg-info rounded-3 p-4'>
-            <p className='mb-2'>
+          <div className='bg-info rounded-3 p-3 p-sm-4'>
+            <p className='mb-2 fs-6 fs-sm-5'>
               <strong>Email:</strong> topnotchprogrammers@gmail.com
             </p>
-            <p className='mb-2'>
+            <p className='mb-2 fs-6 fs-sm-5'>
               <strong>Phone:</strong> 123-456-7890
             </p>
-            <p>
+            <p className='fs-6 fs-sm-5'>
               <strong>Address:</strong> 1600 Pennsylvania Avenue NW, Washington,
               DC 20500
             </p>
